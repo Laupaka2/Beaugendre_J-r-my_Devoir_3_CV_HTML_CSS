@@ -3,9 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cv-Jérémy-Beaugendre</title>
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="./asset/img/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./asset/img/favicon.svg" />
+    <link rel="shortcut icon" href="./asset/img/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./asset/img/apple-touch-icon.png" />
+    <link rel="manifest" href="./asset/img/site.webmanifest" />
 </head>
 <body>
-    
-</body>
-</html>
+    <!--en-tête avec image de profil et infomation de contact avec redirection-->
+    <header>
+        <div class="container">
+        <div class="photo">
+            <a href="./asset/img/photocv.jpg"><img src="./asset/img/photocv.jpg" alt="photocv"></a>
+        </div>  
+            <div class="info">
+                <h1>
+                    <span id="prenom">Jérémy</span>
+                    <span id="nom">Beaugendre</span>
+                </h1>
+                <h2 class="post">Développeur Web et Web Mobile</h2>
+                <div class="container-2">
+                    <address class="email">
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:devoir@gmail.com">Mail</a>
+                    </address>
+                    
+                    <address class="maison">
+                        <i class="fa-solid fa-house"></i>
+                        <a href="https://maps.app.goo.gl/GZ4wdLJf71JBxmyL8">Adresse</a>
+                    </address>    
+                </div> 
+                <div class="container-3">
+                    <address class="contact">
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:06.05.05.05.05">Téléphone</a>
+                    </address>  
+                    <address class="voiture">
+                        <i class="fa-solid fa-car"></i>
+                        <span>Permis B</span>
+                    </address>
+                </div>   
+            </div>
+    </header>
+    <main class="cv-container">
+        <!--div contenant compétence, langues, qualité et centre d'intérêt-->
+            <div class="competences">
+                <h2>Compétences</h2>
+                <div class="trait-2"></div>
+                <div class="comp-1">
+                    <p><strong>HTML</strong></p><br>
+                    <p><strong>CSS</strong></p><br>
+                    <p><strong>Javascript</strong></p><br>
+                    <p><strong>PHP</strong></p>
+                </div>
+                <div class="b"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+                <div class="c"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+                <div class="d"><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+                <div class="e"><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+                <h2>Langues</h2>
+                <div class="trait-2"></div>
+                <p class="lg"><strong class="epai">Français</strong> Langue maternelle</p>
+                <p class="lg-2"><strong class="epai">Anglais</strong> Notions</p>
+                <h2>Qualités</h2>
+                <div class="trait-2"></div>
+                <ul class="qlt">
+                    <li>Esprit d'équipe</li>
+                    <li>Autonomie</li>
+                    <li>Organisation</li>
+                    <li>Créativité</li>
+                </ul>
+                <h2>Centres d'intérêt</h2>
+                <div class="trait-2"></div>
+                <ul class="qlt">
+                    <li>Jeux vidéo</li>
+                    <li>Escalade</li>
+                    <li>Série</li>
+                    <li>Sortie entre amies</li>
+                </ul>
+            </div>
+            <div class="pfse"> <!--div contenant mon profil, mes formation, stages et expérience professionnel avec des titre et des separation faite avec des div a la place des /hr et des section avec des sous-section gauche et droite-->
+                <div class="prez">
+                    <h2>Profil</h2>
+                    <div class="trait"></div>
+                    <p>Je suis actuellement en formation pour devenir 
+                        Développeur web et mobile (Full stack).
+                        Je suis rigoureux, professionnel dans ce que j’entreprends, motivé et prêt à relever les défis et à m’adapter à toutes les sortes de projets, défis que l’on pourrait me demander.</p>
+                </div>
+                <h2 class="titre-1">Formations</h2>
+                <div class="trait"></div>
+                <div class="section">
+                    <div class="sec-gauche">
+                        <p><strong>Titre Professionnel DWWM</strong><br>
+                        Centre Européen de Formation</p>
+                    </div>
+                    <div class="sec-droite">
+                        <p>2024/Auj.</p>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="sec-gauche">
+                    <p><strong>I2M Quick France</strong><br>
+                        Formation management</p>
+                    </div>
+                    <div class="sec-droite">
+                        août 2014 - mai 2014
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="sec-gauche">
+                        <p><strong>CAP ébéniste</strong><br>
+                        Lycée de Prony à Asnières-sur-Seine</p>
+                    </div>
+                    <div class="sec-droite">
+                        2008 - 2012
+                    </div>
+                </div>
+                <h2 class="titre-1">Stages</h2>
+                <div class="trait"></div>
+                <div class="section">
+                    <div class="sec-gauche">
+                    <p><strong>Restauration de meubles anciens</strong><br>
+                        Ebénisterie du Ranelagh</p>
+                    </div>
+                    <div class="sec-droite">
+                        Avril 2012
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="sec-gauche">
+                    <p><strong>Restauration de meubles anciens</strong><br>
+                        Ebénisterie du Ranelagh</p>
+                    </div>
+                    <div class="sec-droite">
+                        Juin 2011
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="sec-gauche">
+                        <p><strong>Menuiserie</strong><br>
+                            ALEMANIE & fils</p>
+                    </div>
+                    <div class="sec-droite">
+                        Avril 2010
+                    </div>     
+                </div>
+                <div class="section">
+                    <div class="sec-gauche">
+                        <p><strong>Menuiserie</strong><br>
+                            ALEMANIE & fils</p>
+                    </div>
+                    <div class="sec-droite">
+                        Juin 2009
+                    </div>     
+                </div>
+                <div class="section">
+                    <div class="sec-gauche">
+                        <p><strong>Menuiserie</strong><br>
+                            ALEMANIE & fils</p>
+                    </div>
+                    <div class="sec-droite">
+                        Juin 2008
+                    </div>     
+                </div>
