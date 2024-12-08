@@ -74,7 +74,7 @@ header{
     margin: 0 auto;
     background-color: #17abb3;
 }
-/* section placer dans le header avec flexbox hauteur largeur et supréssion des puces*/
+/* div placer dans le header avec flexbox hauteur largeur et supréssion des puces*/
 .container{
     display: inline-flex;
     flex-direction: row;
@@ -114,7 +114,7 @@ img{
 img:hover{
     cursor: zoom-in;
 }
-/* section contenant tous les info et conteneur du header avec un flex-basis qui occupe 50% de l'espace*/
+/* div contenant tous les info et conteneur du header avec un flex-basis qui occupe 50% de l'espace*/
 .info{
     flex-basis: 50%;
 }
@@ -127,7 +127,7 @@ img:hover{
     padding-top: 10px;
     padding-bottom: 10px;
 }
-/* container placer avec flexbox marge interne police d'écriture qui sert a placer email et l'adresse */
+/* Deuxièmes  div container placer avec flexbox marge interne police d'écriture qui sert a placer email et l'adresse */
 .container-2{
     display: flex;
     justify-content: space-around;
@@ -135,7 +135,7 @@ img:hover{
     padding-top: 10px;
     font-family: "Lato";  
 }
-/*Deuxième container placer aussi avec flexbox marge interne police d'écriture qui sert a placer Telephone et permi B*/
+/*Troisièmes div container placer aussi avec flexbox marge interne police d'écriture qui sert a placer Telephone et permi B*/
 .container-3{
     display: flex;
     justify-content: space-evenly;
@@ -181,7 +181,7 @@ toute positionner avec flexbox contenan une largeur maximum et minimum une haute
     margin: 0 auto;
     background-color: #ffffff;
 }
-/* la section qui contient mes compétence,langue,qualités,centre d'intrêt positionner avec flexbox en column un flex wrap pas depasser du container 
+/* la div qui contient mes compétence,langue,qualités,centre d'intrêt positionner avec flexbox en column un flex wrap pas depasser du container 
 une largeur défini la couleur de fond du container une marge interne et une position relative */
 .competences{
     display: flex;
@@ -272,7 +272,7 @@ ul li::marker{
     color: #17abb3;
     font-size: 1.5em;
 }
-/* section contenant le profil, les formations, les stages et les expérience professionnel positionner avec flexbox en column avec une largeur maximum
+/* div contenant le profil, les formations, les stages et les expérience professionnel positionner avec flexbox en column avec une largeur maximum
 une marge interne pour bien positionner le tous */
 .pfse{
     display: flex;
@@ -291,7 +291,7 @@ une marge interne pour bien positionner le tous */
     text-indent: 10px;
     padding-top: 10px;
 }
-/* div pour les séparation entre les titres et les texte de chaque section et marge interieur et exterieur
+/* div pour les séparation entre les titres et les texte de chaque div et marge interieur et exterieur
 pour bien positionner mes titre et texte et une couleur gris et une épaisseur de 1px qui crée la séparation*/
 .trait{
     border-bottom: 1px solid #e3e3e3;
@@ -300,12 +300,12 @@ pour bien positionner mes titre et texte et une couleur gris et une épaisseur d
     padding-top: 10px;
     margin-bottom: 20px;
 }
-/* marge interne en haut pour crée l'espace entre le titre et chaque section*/
+/* marge interne en haut pour crée l'espace entre le titre et chaque div*/
 .titre-1{
     padding-top: 45px;
 }
-/*section placer avec flexbox qui sert a placer mes div sec gauche et droite avec une taille maximum police d'écriture 
-et un marge interne en haut pour faire de l'espace entre chaque section */
+/*div placer avec flexbox qui sert a placer mes div sec gauche et droite avec une taille maximum police d'écriture 
+et un marge interne en haut pour faire de l'espace entre chaque div */
 .section{
     display: flex;
     flex-direction: row;
