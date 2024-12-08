@@ -1,5 +1,7 @@
+/*font-family "Lato" importer de google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+/* font-family télécharger de google fonts et importer via @font-face*/
 @font-face {
     font-family: "Raleway";
     src: url('../fonts/Raleway-Regular\ \(convert.io\).woff');
@@ -32,13 +34,17 @@
     font-weight: 400;
     font-style: italic;
 }
+
+/*Rénitialisation des marges interne et externe des pages*/
 *{
     margin: 0;
     padding: 0;
 }
+/*Taille police d'ecriture du cv*/
 html{
     font-size: 1rem;
 }
+/*Taille du body et dégrader comme sur la maquette gauche blanc et droite gris*/
 body{
     background-image: linear-gradient(to right,
     #ffffff 0%,
@@ -48,46 +54,69 @@ body{
     );
     height: 100%;
 }
+/*Taille couleur et police de d'écriture du titre h1*/
 h1{
     font-family: "Lato";
     color: #ffffff;
-    margin-left: 15px;
+    font-size: 3rem;
 }
+/* Couleur police d'écriture epaisseur style de police*/
 h2{
     font-family: "Lato";
     font-weight: 100;
     font-style: normal;
     color: #17abb3;
 }
-h3{
-    font-family: "Lato";
-    color: #17abb3;
-    padding-top: 20px;
-}
-.dev{
-    font-family: "Lato";
-    color: #ffffff;
-}
+/* Taille et centrage du header avec couleur de fond*/
 header{
     width: 1160px;
+    height: 250px;
     margin: 0 auto;
     background-color: #17abb3;
 }
+/* Container placer dans le header avec flexbox hauteur largeur et supréssion des puces*/
 .container{
     display: inline-flex;
     flex-direction: row;
     align-items: center;
     list-style: none;
     width: 100%;
-    height: 200px;
+    height: 250px;
 }
+/* div contenant la photo avec un flex-basis qui occupe 50% de l'espace et position relative pour declaré l'élément par rapport a sa position normal */
+.photo{
+    flex-basis: 50%;
+    position: relative;
+}
+/* la balise img avec une image sa taille couleur et une bordure de couleur  blanche en 5px
+ un border radius pour arrondir les coin  et une position absolute avec un top left pour placer l'image dans le header */
+img{
+    position: absolute;
+    top: -65px;
+    left: 90px;
+    width: 136px;
+    height: 136px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: #ffffff solid 5px;  
+}
+/* un hover avec cursor zoom-in pour avoir le curseur loupe qui montre que l'on peut grandir l'image au passage de la souris*/
+img:hover{
+    cursor: zoom-in;
+}
+/* div contenant tous les info et conteneur du header avec un flex-basis qui occupe 50% de l'espace*/
+.info{
+    flex-basis: 50%;
+}
+/* Deuxième container placer dans le 1er avec flexbox marge interne police d'écriture qui sert a placer email et l'adresse */
 .container-2{
     display: flex;
     justify-content: space-around;
     padding-right: 240px;
     padding-top: 10px;
-    font-family: "Lato";   
+    font-family: "Lato";  
 }
+/*Troisième container placer aussi dans le 1er avec flexbox marge interne police d'écriture qui sert a placer Telephone et permi B*/
 .container-3{
     display: flex;
     justify-content: space-evenly;
@@ -95,44 +124,29 @@ header{
     padding-right: 233px;
     font-family: "Lato";
 }
+/* Couleur des icones font awesome voiture maison enveloppe téléphone*/
 .voiture i{
     color: #ffffff;
 }
 .maison i{
     color: #ffffff;
 }
-.contact{
-    padding-left: 5px;
-}
 .contact i{
     color: #ffffff;
-}
-.email{
-    padding-left: 10px;
 }
 .email i{
     color: #ffffff;
 }
-.info{
-    flex-basis: 50%;
+/*Marge interne qui sert a placer l'icone téléphone et le texte téléphone correctement*/
+.contact{
+    padding-left: 5px;
 }
-.photo{
-    flex-basis: 50%;
-    position: relative;
+/*Marge interne qui sert a placer l'icone de l'email et le texte mail correctement*/
+.email{
+    padding-left: 10px;
 }
-img{
-    position: absolute;
-    top: -60px;
-    left: 90px;
-    width: 15vh;
-    height: 15vh;
-    object-fit: cover;
-    border-radius: 50%;
-    border: #ffffff solid 5px;  
-}
-img:hover{
-    cursor: zoom-in;
-}
+/*Les balise a du header couleur  police d'écriture epaisseur style de police un texte decoration en none pour enlever l'effet surligner sous mes liens
+et un padding pour positionner correctement mes icones avec mes liens*/
 a{
     color: #ffffff;
     text-decoration: none;
@@ -160,9 +174,9 @@ span{
     display: flex;
     max-height: 100%;
     max-width: 1160px;
+    min-width: 1160px;
     margin: 0 auto;
     flex-direction: row;
-    flex-wrap: wrap;
     background-color: #ffffff;
 }
 .competences{
@@ -316,21 +330,17 @@ strong{
 }
 footer{
     width: 1160px;
-    height: 100px;
+    
     flex-direction: row;
     justify-content: center;
     margin: auto;
     background-color: #17abb3;
 }
-input[type=date], label[for=start]{
-    background-color: #17abb3;
+.maj p{
     color: #ffffff;
-    border: none;
-    font-size: 1rem;
-}
-label[for=start]{
     font-family: "Raleway";
-    font-style: normal; 
+    font-style: italic;
+    font-size: 0.850rem;
 }
 .maj{
     display: flex;
@@ -339,6 +349,7 @@ label[for=start]{
     align-items: flex-end;
     width: 1160px;
     height: 30px;
+    padding-bottom: 10px;
 }
 .reseau{
     display: flex;
@@ -348,14 +359,19 @@ label[for=start]{
     margin-right: auto;
     align-items: flex-end;
     width: 150px;
-    height: 70px;
+    height: 50px;
     color: #ffffff;
 }
 .lik{
+    display: flex;
+    align-items: flex-end;
     width: 33px;
     height: 33px;
     object-fit: cover;
 }
+.lik i{
+    font-size: 1.6rem;
+}
 footer .reseau i:hover{
-    color: rgb(255, 255, 255, 50%);
+    color: rgb(255, 255, 255, 70%);
 }
