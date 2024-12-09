@@ -74,7 +74,7 @@ header{
     margin: 0 auto;
     background-color: #17abb3;
 }
-/* Container placer dans le header avec flexbox hauteur largeur et supréssion des puces*/
+/* div placer dans le header avec flexbox hauteur largeur et supréssion des puces*/
 .container{
     display: inline-flex;
     flex-direction: row;
@@ -82,6 +82,16 @@ header{
     list-style: none;
     width: 100%;
     height: 250px;
+}
+/*Les balise a du header couleur  police d'écriture epaisseur style de police un texte decoration en none pour enlever l'effet surligner sous mes liens
+et un padding pour positionner correctement mes icones avec mes liens*/
+a{
+    color: #ffffff;
+    text-decoration: none;
+    padding-left: 5px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 100;
 }
 /* div contenant la photo avec un flex-basis qui occupe 50% de l'espace et position relative pour declaré l'élément par rapport a sa position normal */
 .photo{
@@ -108,7 +118,16 @@ img:hover{
 .info{
     flex-basis: 50%;
 }
-/* Deuxième container placer dans le 1er avec flexbox marge interne police d'écriture qui sert a placer email et l'adresse */
+.post{
+    color: #ffffff;
+    width: 100%;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/* Deuxièmes  div container placer avec flexbox marge interne police d'écriture qui sert a placer email et l'adresse */
 .container-2{
     display: flex;
     justify-content: space-around;
@@ -116,7 +135,7 @@ img:hover{
     padding-top: 10px;
     font-family: "Lato";  
 }
-/*Troisième container placer aussi dans le 1er avec flexbox marge interne police d'écriture qui sert a placer Telephone et permi B*/
+/*Troisièmes div container placer aussi avec flexbox marge interne police d'écriture qui sert a placer Telephone et permi B*/
 .container-3{
     display: flex;
     justify-content: space-evenly;
@@ -145,41 +164,25 @@ img:hover{
 .email{
     padding-left: 10px;
 }
-/*Les balise a du header couleur  police d'écriture epaisseur style de police un texte decoration en none pour enlever l'effet surligner sous mes liens
-et un padding pour positionner correctement mes icones avec mes liens*/
-a{
-    color: #ffffff;
-    text-decoration: none;
-    padding-left: 5px;
-    font-family: "Raleway";
-    font-style: normal;
-    font-weight: 100;
-}
-
-.post{
-    color: #ffffff;
-    width: 100%;
-    font-family: "Lato";
-    font-style: normal;
-    font-weight: bold;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
+/* span du permis b avec couleur padddin pour placer correctement l'icone et le text permi b la police d'écriture et le style de police*/
 span{
     color: #ffffff;
     padding-left: 5px;
     font-family: "Raleway";
     font-style: normal;
 }
+/* main avec un classe cv-containeur qui englobe les div compétence, profil, formation, stages, expériences professionnel avec des div gauche et droite 
+toute positionner avec flexbox contenan une largeur maximum et minimum une hauteur a 100% un marge en auto pour centré et une couleur de fond*/
 .cv-container{
     display: flex;
     max-height: 100%;
     max-width: 1160px;
     min-width: 1160px;
     margin: 0 auto;
-    flex-direction: row;
     background-color: #ffffff;
 }
+/* la div qui contient mes compétence,langue,qualités,centre d'intrêt positionner avec flexbox en column un flex wrap pas depasser du container 
+une largeur défini la couleur de fond du container une marge interne et une position relative */
 .competences{
     display: flex;
     flex-direction: column;
@@ -190,95 +193,119 @@ span{
     padding: 50px;
     position: relative;
 }
-.lg{
-    padding-bottom: 10px;
-    text-align-last: justify;
+/* Séparation créer avec des div ne contenant rien sauf une bordure basse de 1 px solide gris foncé avec une largeur et hauteur défini
+une marge interne haute pour créer l'espace entre les titre et une marge exterieur pour créer l'espace entre la séparation et le contenu*/
+.trait-2{
+    border-bottom: 1px solid #e3e3e3;
+    width: 248px;
+    height: 2px;
+    padding-top: 8px;
+    margin-bottom: 20px;
 }
-.lg-2{
-    padding-bottom: 50px;
-    text-align-last: justify;
-}
-.epai{
-    padding-right: 40px;
-}
+/* crée l'espace entre les titre et le contenu au-dessus*/
 .comp-1{
-padding-bottom: 50px;
+    padding-bottom: 50px;
 }
-.comp-1 p{
-    text-align-last: justify;
-}
+/* div contenant les icones étoile positionner en absolute avec un top et un right du texte HTML dans la div compétence*/
 .b{
     position: absolute;
     right: 50px;
     top: 111px;
 }
+/*Couleur des icones étoile du texte HTML dans compétence*/
 .b i{
     color: #17abb3;
 }
+/* div contenant les icones étoile positionner en absolute avec un top et un right du texte CSS dans la div compétence*/
 .c{
     position: absolute;
     top: 150px;
     right: 50px;
 }
+/*Couleur des icones étoile du texte CSS dans compétence*/
 .c i{
     color: #17abb3;
 }
+/* div contenant les icones étoile positionner en absolute avec un top et un right du texte Javascript dans la div compétence*/
 .d{
     position: absolute;
     right: 50px;
     top: 189px;
 }
+/*Couleur des icones étoile du texte Javascript dans compétence*/
 .d i{
     color: #17abb3;
 }
+/* div contenant les icones étoile positionner en absolute avec un top et un right du texte PHP dans la div compétence*/
 .e{
     position: absolute;
     right: 50px;
     top: 228px;
 }
+/*Couleur des icones étoile du texte PHP dans compétence*/
 .e i{
     color: #17abb3;
 }
-.a{
-    width: 248px;
-    height: 29px;
-    margin-bottom: 8px;
+/* Marge interne pour espacé les texte francais anglais et un text-align-last pour bien psitionner les texte maternelle dans la div compétence*/
+.lg{
+    padding-bottom: 10px;
+    text-align-last: justify;
 }
+/* Marge interne pour espacé le contenu des titre en-dessous  et un text-align-last pour bien psitionner les texte notion dans la div compétence*/
+.lg-2{
+    padding-bottom: 50px;
+    text-align-last: justify;
+}
+/* marge interne pour bien positionner le texte langue de langue maternelle dans competence*/
+.epai{
+    padding-right: 40px;
+}
+/* list a puce non ordonné avec un list-style square pour les rendre carré marge interne gauche pour positionner les listes 
+et basse pour bien séparé les 2 listes*/
 .qlt{
     list-style: square;
     padding-left: 1.4em;
     padding-bottom: 50px;
 }
+/* pour changer la couleur des puces des listes et leur tailles*/
 ul li::marker{
     color: #17abb3;
     font-size: 1.5em;
 }
+/* div contenant le profil, les formations, les stages et les expérience professionnel positionner avec flexbox en column avec une largeur maximum
+une marge interne pour bien positionner le tous */
 .pfse{
     display: flex;
     flex-direction: column;
-    max-width: 712px;
-    width: 100%;
-    height: 100%;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    max-width: 812px;
+    padding: 50px;
 }
+/* div contenant le profil avec police d'écriture et style de police*/
 .prez{
     font-family: "Raleway";
     font-style: normal;
 }
+/* un text-align et un text-indent qui permet de justifier et indenter le */
 .prez p{
     text-align: justify;
     text-indent: 10px;
     padding-top: 10px;
 }
-hr{
-    border:none;
-    background-color: #e3e3e3;
-    height: 1px;
-    width: 100%;
+/* div pour les séparation entre les titres et les texte de chaque div et marge interieur et exterieur
+pour bien positionner mes titre et texte et une couleur gris et une épaisseur de 1px qui crée la séparation*/
+.trait{
+    border-bottom: 1px solid #e3e3e3;
+    width: 712px;
+    margin: auto;
+    padding-top: 10px;
+    margin-bottom: 20px;
 }
+/* marge interne en haut pour crée l'espace entre le titre et chaque div*/
+.titre-1{
+    padding-top: 45px;
+}
+/*div placer avec flexbox qui sert a placer mes div sec gauche et droite avec une taille maximum police d'écriture 
+et un marge interne en haut pour faire de l'espace entre chaque div */
 .section{
     display: flex;
     flex-direction: row;
@@ -288,61 +315,50 @@ hr{
     font-style: italic;
     max-width: 697px;
     width: 100%;
-    height: 50px;
-    padding-top: 10px;    
+    height: 40px;
+    padding-top: 20px;    
 }
+/*pour l'effet au survole quand on passe sur une formation, un stage ou une expérience professionnel le fond passe a gris et
+un trait vertical de la meme couleur que les titre apparaît a gauche et la padding-left pour crée l'espace entre le trait et le texte*/
 .section:hover{
     border-left: 5px solid #17abb3;
     padding-left: 10px;
+    padding-right: 10px;
     background-color: #e3e3e3;
-    width: 712px;
+    width: 687px;
+    height: 40px;
 }
-.titre-1{
-    padding-top: 45px;
-}
-.trait{
-    border-bottom: 1px solid #e3e3e3;
-    width: 712px;
-    margin: auto;
-    padding-top: 10px;
-    margin-bottom: 10px;
-}
-.trait-2{
-    border-bottom: 1px solid #e3e3e3;
-    width: 248px;
-    height: 2px;
-    padding-top: 8px;
-    margin-bottom: 20px;
-}
+/* positionnement avec flexbox des div gauche de chaque section avec hauteur et largeur */
 .sec-gauche{
     display: flex;
     justify-content: flex-start;
     width: 356px;
+    height: 50px;
 }
+/* positionnement avec flexbox des div droite de chaque section avec hauteur et largeur puis la couleur de police d'écriture
+et une marge interne en haut pour bien positionner les texte*/
 .sec-droite{
     display: flex;
     justify-content: flex-end;
     width: 340px;
+    height: 50px;
+    padding-top: 5px;
     color: #17abb3;
 }
+/* police d'écriture avec style de police d'écriture de chaque balise strong des mes div droite*/
 strong{
     font-family: "Lato";
     font-style: normal;
 }
+/*largeur et hauteur du footer avec un margin auto pour le positionnementet la couleur de fond */
 footer{
     width: 1160px;
-    
-    flex-direction: row;
-    justify-content: center;
+    height: 90px;
     margin: auto;
     background-color: #17abb3;
 }
-.maj p{
-    color: #ffffff;
-    font-family: "Raleway";
-    font-style: italic;
-    font-size: 0.850rem;
-}
+/* Positionnement avec flexbox de la div de la date de mise a jour du footer avec taille de la div et une marge 
+interieure pour positionner le texte correctement*/
 .maj{
     display: flex;
     flex-direction: row;
@@ -352,6 +368,14 @@ footer{
     height: 30px;
     padding-bottom: 10px;
 }
+/* couleur police et style d'écriture et taille de police d'écriture de la date de mise du footer*/
+.maj p{
+    color: #ffffff;
+    font-family: "Raleway";
+    font-style: italic;
+    font-size: 0.850rem;
+}
+/* positionnement des div des reseaux sociaux avec flexbox taille de la div marge interne gauche et droite pour le positionement de la div reseau */
 .reseau{
     display: flex;
     flex-direction: row;
@@ -363,16 +387,18 @@ footer{
     height: 50px;
     color: #ffffff;
 }
+/* Positionnement des div des icones  avec flexbox et taille des div */
 .lik{
     display: flex;
     align-items: flex-end;
     width: 33px;
     height: 33px;
-    object-fit: cover;
 }
+/* taille des icones du footer*/
 .lik i{
     font-size: 1.6rem;
 }
+/* reduction de l'opacité des icone des reseaux sociaux au passage de la souris*/
 footer .reseau i:hover{
     color: rgb(255, 255, 255, 70%);
 }
